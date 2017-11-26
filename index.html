@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+</head>
+
+<body>
+    <div class="stopwatch">
+        <div class="fixed">
+
+            <div class="main-counter"></div>
+            <div class="controls">
+                <div class="pull-left">
+                    <button class="btn btn-lap">Lap</button>
+                    <button class="btn btn-reset">Reset</button>
+                </div>
+                <div class="pull-right">
+                    <button class="btn btn-start">Start</button>
+                    <button class="btn btn-stop">Stop</button>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="laps">
+        </div>
+    </div>
+
+
+    <script src="Stopwatch.js"></script>
+    
+    <script>
+        Stopwatch('.stopwatch');
+    </script>
+
+    <div style="position: fixed; bottom: 0px; width: 100%">
+        
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: normal 16px courier, arial;
+    text-align: center;
+    background: #0D0D0D;
+}
+
+.clear {
+	clear: both;
+	line-height: 0px;
+	height: 0px
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.stopwatch {
+	width: 320px;
+	margin: 0 auto;
+	color: #FFF;
+	font: normal 17px helvetica neue, arial;
+	overflow: hidden;
+	background: #0D0D0D;
+	height: 100vh;
+	overflow-y: scroll;
+	position: relative;
+}
+
+.stopwatch .fixed {
+	position: fixed;
+	background: inherit;
+	width: inherit;
+}
+
+.stopwatch .header {
+	background: #181818;
+	padding: 11px;
+	border-bottom: 1px solid #313131
+}
+
+.stopwatch .header span {
+  opacity: 0.8;
+  font-size: 14px
+}
+
+.stopwatch .main-counter  {
+	font-size: 80px;
+	font-weight: 200;
+	padding: 20px 0px;
+}
+
+.stopwatch .controls {
+	padding: 12px 0px;
+	margin: 0px 15px;
+	border-bottom: 1px solid #333;
+}
+
+.stopwatch .controls .btn {
+	color: #fff;
+	border: 5px double #000;
+	width: 85px;
+	height: 85px;
+  padding: 0px;
+  text-align: center;
+	border-radius: 50px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.stopwatch .btn[disabled] {
+	opacity: 0.5
+}
+
+.stopwatch .btn-reset, .stopwatch .btn-lap {
+	background: #3d3d3d;
+}
+
+.stopwatch .btn-start {
+	background-color: #19351e;
+	color: #73c972;
+}
+
+.stopwatch .btn-stop {
+	background-color: #3d1513;
+	color: #f9382f;
+}
+
+.stopwatch .laps {
+	margin: 290px 15px 0px 15px;
+}
+
+.stopwatch .laps .lap {
+	padding: 10px 0px;
+	border-bottom: 1px solid #333;
+}
+
+.stopwatch .laps .lap.slowest {
+	color: #f9382f;
+}
+
+.stopwatch .laps .lap.fastest {
+	color: #73c972;
+}
